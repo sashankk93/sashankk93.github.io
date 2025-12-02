@@ -1,1 +1,211 @@
+/*
+Original design: Basic Noise (v1.1 - Sep 11, 2012) - A free xhtml/css website template by Andreas Viklund.
+For more information, see http://andreasviklund.com/templates/basic-noise/
+*/
 
+*{margin:0;padding:0;}
+body{background:#cfdef7 url(background.jpg);color:#333;font:76% Georgia,Times New Roman,serif;}
+p{line-height:1.6em;margin-bottom:18px;}
+a{color:#4554d8;}
+a:hover{color:#333;}
+h1{color:#4554d8;font-family:Georgia,serif;font-size:2.4em;}
+h2{color:#4554d8;font-family:Georgia,serif;font-size:2.2em;font-weight:400;margin:0 0 10px 0;}
+h3{color:#4554d8;font-family:Georgia,serif;font-size:1.6em;font-weight:400;margin:0 0 8px;}
+ul,ol,dl{margin:0 0 20px 20px; padding:0;}
+li{padding-bottom:5px;}
+
+#containerfull,#container980,#container760,#container600{margin:0 auto;padding:0;overflow:hidden;}
+#containerfull{width:90%;border:0;}
+#container980{width:980px;}
+#container760{width:760px;}
+#container600{width:600px;}
+
+.page-container {
+    width: 90%;          /* responsive */
+    max-width: 1200px;   /* perfect for academic pages */
+    margin: 0 auto;      /* centers the block */
+}
+
+#header{margin:0 auto;padding:10px 25px;}
+#header h1{text-align:center;margin:0;padding:20px 0 0;}
+#header h1 a{color:#4554d8; font-family:Georgia,serif;font-size:1.8em;font-weight:400;text-decoration:none;}
+#header h2{text-align:center;color:#4554d8;padding:0 0 20px 0;margin:0;font-family:Georgia,serif;font-size:1.6em;font-weight:400;}
+
+#menu{height:40px;}
+#menu ul{height:40px;list-style:none;margin:0;padding:0 25px 0 0;}
+#menu ul li{background-color:#333;display:block;float:left;margin:0 5px 0 0;padding:0;}
+#menu ul li a{background-color:#333;color:#ddd;display:block;font-size:1.4em;padding:10px 12px;text-decoration:none;}
+#menu ul li a:hover{color:#fff;}
+#menu ul li a.current{background-color:#eee;color:#333;border-bottom:1px solid #eee;}
+
+#feature{background-color:#eee;color:#555;padding:25px 25px 5px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;}
+#feature h2{color:#4554d8;font-size:2em;line-height:1em;}
+#feature p{font-size:1.3em;margin:0 0 15px 0; line-height:1.5em;}
+#feature img{display:block;margin:0 auto;}
+
+#main{clear:both;margin:0;background-color:#fff;padding:25px 25px 5px;}
+#content{width:100%;}
+
+#credits{color:#888;padding:15px 25px;text-align:center;}
+#credits p{font-size:1.2em;margin:0;padding:0;line-height:1.4em;}
+#credits a{color:#888;font-weight:400;}
+
+.left{float:left;width:49%;}
+.right{float:right;width:48%;}
+.clear{clear:both;visibility:hidden;}
+.small{font-size:0.7em;}
+
+/* ============================================================
+   GLOBAL BACKGROUND + TYPOGRAPHY
+   ============================================================ */
+
+/* Light blue overall background */
+body {
+    background: #cfdef7;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #222; /* main text in dark gray/black */
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ============================================================
+   HEADINGS (your name, page headers, section titles)
+   ============================================================ */
+
+/* All headings use your blue accent */
+h1, h2, h3 {
+    font-weight: normal;
+    color: #4554d8;
+    margin: 0 0 10px 0;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+
+/* ============================================================
+   LINKS (also your blue)
+   ============================================================ */
+
+a {
+    color: #4554d8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* ============================================================
+   CENTERED PAGE CONTAINER
+   ============================================================ */
+
+.page-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* ============================================================
+   PERSONAL HEADER (name left, contact right)
+   ============================================================ */
+
+#personal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 15px 0 25px 0;
+    border-bottom: 1px solid #9eb2ef; /* light tint of your blue */
+    margin-bottom: 25px;
+}
+
+/* Left side (name + designation) */
+.ph-left h1 {
+    margin: 0;
+    color: #4554d8; /* your name in your blue */
+}
+
+.ph-left p {
+    margin: 3px 0;
+    font-size: 20px;
+    color: #4554d8; /* designation also in your blue */
+}
+
+/* Right side (email / scholar / LinkedIn) */
+.ph-right {
+    text-align: right;
+}
+
+.ph-right p {
+    margin: 3px 0;
+    font-size: 18px;
+    color: #4554d8; /* contact info in your blue */
+}
+
+@media (max-width: 600px) {
+    #personal-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .ph-right {
+        text-align: left;
+        margin-top: 10px;
+    }
+}
+
+
+/* ============================================================
+   NAVIGATION BAR
+   ============================================================ */
+
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0 0 20px 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    color: #222;
+    padding-bottom: 2px;
+}
+
+/* Active page uses your blue */
+nav ul li.active a {
+    color: #4554d8;
+    font-weight: bold;
+    border-bottom: 2px solid #4554d8;
+}
+
+nav ul li a:hover {
+    color: #4554d8;
+}
+
+
+/* ============================================================
+   SECTION SPACING + CLEAN LAYOUT
+   ==============================================
+/* Hide publication links when they have no actual URL */
+.pub-links a[href=""] {
+    display: none;
+}
