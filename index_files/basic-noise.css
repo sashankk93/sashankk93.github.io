@@ -209,3 +209,98 @@ nav ul li a:hover {
 .pub-links a[href=""] {
     display: none;
 }
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.about-text {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* About page layout: centered photo, readable text */
+.about-single {
+    text-align: center;         /* center children horizontally */
+    padding-top: 20px;
+}
+
+/* Center the photo */
+.about-photo-single img {
+    width: 200px;               /* tweak if you want bigger/smaller */
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #4554d8;
+
+    display: block;
+    margin: 0 auto;             /* ensures true centering */
+}
+
+/* Text block below, limited width and left-aligned */
+.about-text-single {
+    max-width: 700px;           /* keep text readable */
+    margin: 20px auto 0 auto;   /* center the text block */
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* About page: single-column layout */
+.about-single {
+    padding-top: 20px;
+}
+
+/* FLEXBOX: force photo to the center */
+.about-photo-single {
+    display: flex;
+    justify-content: center;  /* centers the child horizontally */
+    margin-bottom: 20px;
+}
+
+/* Brutally override any template floats/margins on images here */
+.about-photo-single img {
+    width: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #4554d8;
+
+    float: none !important;
+    margin: 0 !important;
+    display: block;
+}
+
+/* Text block below, centered as a column, but left-aligned text */
+.about-text-single {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* About page: single centered column */
+.about-wrapper {
+    max-width: 700px;           /* nice readable width */
+    margin: 40px auto;          /* centers the block */
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Center the photo and kill any old floats */
+#about-photo {
+    width: 200px;               /* adjust as you like */
+    border-radius: 8px;
+    border: 2px solid #4554d8;
+    object-fit: cover;
+
+    display: block;
+    margin: 0 auto 20px auto;   /* perfectly centered with space below */
+    float: none !important;     /* override template float */
+}
+
