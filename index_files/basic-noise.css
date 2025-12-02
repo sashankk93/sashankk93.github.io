@@ -366,3 +366,28 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+.course-table {
+    border: 1px solid #999;     /* outer border */
+    border-collapse: collapse;
+}
+
+.course-table th,
+.course-table td {
+    border: 1px solid #ccc;     /* inner cell borders */
+}
+
+.course-table th:first-child,
+.course-table td:first-child {
+    width: 10%;     /* Week */
+}
+
+.course-table th:last-child,
+.course-table td:last-child {
+    width: 20%;     /* HW/Exams */
+}
+
+.course-table td:nth-child(2),
+.course-table th:nth-child(2) {
+    width: 70%;     /* Topic */
+}
+
