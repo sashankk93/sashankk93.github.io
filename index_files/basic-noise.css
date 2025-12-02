@@ -185,7 +185,7 @@ nav ul {
 }
 
 nav ul li a {
-    font-size: 18px;
+    font-size: 16px;
     color: #222;
     padding-bottom: 2px;
 }
@@ -304,3 +304,21 @@ nav ul li a:hover {
     float: none !important;     /* override template float */
 }
 
+
+/* Publication Section Headings */
+.page-container h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #4554d8;   /* your blue */
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Publication Section Headings */
+.page-container h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #4554d8;   /* your blue */
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
