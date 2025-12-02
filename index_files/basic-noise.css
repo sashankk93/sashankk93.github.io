@@ -323,13 +323,17 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
+/* Limit table width and center it */
 .course-table {
-    width: 100%;
+    width: 90%;                 /* narrower than full width */
+    max-width: 750px;           /* absolute max width */
+    margin: 20px auto;          /* center horizontally */
     border-collapse: collapse;
-    margin-top: 20px;
     font-size: 16px;
+    table-layout: fixed;        /* ensures wrapping inside cells */
 }
 
+/* Header cells */
 .course-table th {
     background-color: #4554d8;
     color: white;
@@ -338,16 +342,21 @@ nav ul li a:hover {
     font-size: 17px;
 }
 
+/* Body cells */
 .course-table td {
     border-bottom: 1px solid #ccc;
     padding: 10px;
     vertical-align: top;
+    word-wrap: break-word;      /* forces wrapping */
+    white-space: normal;        /* ensures long text wraps */
 }
 
+/* Alternate row shading */
 .course-table tr:nth-child(even) {
     background-color: #f4f7ff;
 }
 
+/* Links */
 .course-table a {
     color: #4554d8;
     text-decoration: none;
