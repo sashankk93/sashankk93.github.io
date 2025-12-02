@@ -322,3 +322,37 @@ nav ul li a:hover {
     margin-top: 30px;
     margin-bottom: 10px;
 }
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.course-table th {
+    background-color: #4554d8;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-size: 17px;
+}
+
+.course-table td {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.course-table tr:nth-child(even) {
+    background-color: #f4f7ff;
+}
+
+.course-table a {
+    color: #4554d8;
+    text-decoration: none;
+}
+
+.course-table a:hover {
+    text-decoration: underline;
+}
