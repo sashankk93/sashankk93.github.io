@@ -326,7 +326,7 @@ nav ul li a:hover {
 /* Limit table width and center it */
 .course-table {
     width: 90%;                 /* narrower than full width */
-    max-width: 750px;           /* absolute max width */
+    max-width: 900px;           /* absolute max width */
     margin: 20px auto;          /* center horizontally */
     border-collapse: collapse;
     font-size: 16px;
@@ -365,3 +365,4 @@ nav ul li a:hover {
 .course-table a:hover {
     text-decoration: underline;
 }
+
