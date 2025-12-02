@@ -391,3 +391,18 @@ nav ul li a:hover {
     width: 70%;     /* Topic */
 }
 
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 14px;
+    background-color: #4554d8;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.back-button:hover {
+    background-color: #2e3fb8;
+}
+
