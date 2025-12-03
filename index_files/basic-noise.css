@@ -448,3 +448,14 @@ nav ul li a:hover {
     color: #666;
 }
 
+/* Reduce font size of publication entries on the Research page only */
+.page-container ul li {
+    font-size: 0.92rem;   /* tweak: try 0.88rem or 0.9rem if you want smaller */
+    line-height: 1.35;    /* keeps it readable at smaller sizes */
+}
+
+/* Optional: reduce paper-title size slightly for consistency */
+.page-container .paper-title {
+    font-size: 0.92rem;
+}
+
