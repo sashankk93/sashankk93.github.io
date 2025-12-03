@@ -38,35 +38,266 @@
   <li><a href="resources.html">Other Resources</a></li>
 		</ul>	
 	</div>
+
+<div class="page-container">
+
+  <h2>Research</h2>
+
+  <p>
+    My research focuses on integrated transceiver architectures for next-generation communication
+    systems, with specific emphasis on interference-resilient wireless receivers based on N-path
+    filtering and high-speed wireline and optical links for advanced computing platforms.
+  </p>
+
+  <!-- ===================================================== -->
+  <!-- 1. Wireless Integrated Circuits                       -->
+  <!-- ===================================================== -->
+
+  <h3>Wireless Integrated Circuits</h3>
+
+  <h4>Interference-Resilient Receivers Using N-Path Techniques</h4>
+
+  <!-- Low-Power IoT / BLE -->
+
+  <h5>Low-Power IoT / BLE Receivers</h5>
+
+  <p>
+    This work focuses on ultra-low-power receiver architectures for BLE and IoT applications
+    operating in dense ISM bands. These designs use N-path filtering and translational feedback
+    concepts to achieve strong interference resilience at very low power levels.
+  </p>
+
+  <ul>
+    <li>
+      <a class="paper-title" href="">
+        580µW 2.2–2.4 GHz Receiver With +3.3 dBm Out-of-Band IIP3 for IoT Applications
+      </a>,
+      <strong>S. Krishnamurthy</strong>, F. Maksimovic, A.M. Niknejad,
+      <em>IEEE European Solid-State Circuits Conference (ESSCIRC), 2018</em>.
+    </li>
+    <li>
+      <a class="paper-title" href="">
+        Analysis and Design of Submilliwatt Interference-Tolerant Receivers Leveraging
+        N-Path Filter-Based Translational Positive Feedback
+      </a>,
+      <strong>S. Krishnamurthy</strong>, F. Maksimovic, L. Iotti, A.M. Niknejad,
+      <em>IEEE Transactions on Microwave Theory and Techniques (TMTT), 2021</em>.
+    </li>
+  </ul>
+
+  <div class="die-photos">
+    <div class="die-slot">Die photo &mdash; Low-power IoT/BLE RX</div>
+  </div>
+
+  <!-- Higher-Order N-Path Filters -->
+
+  <h5>Higher-Order N-Path Filters</h5>
+
+  <p>
+    N-path filters translate low-pass baseband impedances to RF, enabling tunable bandpass filtering
+    simply by adjusting the LO frequency applied to the switch network. This work focuses on
+    extending “vanilla” N-path filters to achieve sharper selectivity and stronger rejection of
+    interferers.
+  </p>
+  <p>
+    We pursue two broad approaches. The first uses higher-order baseband driving-point impedances
+    to synthesize higher-order bandpass responses; as part of this work, we demonstrated the
+    first-ever realization of a third-order all-pole driving-point impedance in an N-path filter
+    system. The second approach constructs higher-order N-path filters by subtracting the responses
+    of staggered low-order NPFs, developed in collaboration with Ashoke Ravi (Intel), Ofir Degani
+    (Intel), Soumya Gupta (OSU), and Arun Natarajan (Yale).
+  </p>
+  <p>
+    Most of the work so far has focused on sub-6 GHz 5G and next-generation Wi-Fi bands. Extending
+    these techniques to 6G / FR3 (7–24 GHz) operation is a promising avenue for future research.
+  </p>
+
+  <ul>
+    <li>
+      <a class="paper-title" href="">
+        Enhanced Passive Mixer-First Receiver Driving an Impedance With 40 dB/decade Roll-Off,
+        Achieving +12 dBm Blocker-P1dB, +33 dBm IIP3 and sub-2 dB NF Degradation for a 0 dBm Blocker
+      </a>,
+      <strong>S. Krishnamurthy</strong>, A.M. Niknejad,
+      <em>IEEE Radio Frequency Integrated Circuits (RFIC) Symposium, 2019</em>.
+    </li>
+    <li>
+      <a class="paper-title" href="">
+        Design and Analysis of Enhanced Mixer-First Receivers Achieving 40-dB/decade RF Selectivity
+      </a>,
+      <strong>S. Krishnamurthy</strong>, A.M. Niknejad,
+      <em>IEEE Journal of Solid-State Circuits (JSSC), 2020</em>.
+    </li>
+    <li>
+      <a class="paper-title" href="">
+        Synthesis and Design of Enhanced N-Path Filters With 60-dB/decade RF Selectivity
+      </a>,
+      <strong>S. Krishnamurthy</strong>, A.M. Niknejad,
+      <em>IEEE Solid-State Circuits Letters (SSCL), 2020</em>.
+    </li>
+    <li>
+      <a class="paper-title" href="">
+        An Enhanced Mixer-First Receiver With Distortion Cancellation, Achieving 80-dB/decade
+        RF Selectivity and +8-dBm B1dB for Adjacent Channel Blockers
+      </a>,
+      <strong>S. Krishnamurthy</strong>, A.M. Niknejad,
+      <em>IEEE Solid-State Circuits Letters (SSCL), 2021</em>.
+    </li>
+    <li>
+      <a class="paper-title" href="">
+        A Channel-Selective, Bandwidth-Reconfigurable Wideband Low Noise Amplifier with
+        Dual-Frequency N-Path Filters
+      </a>,
+      S. Gupta, <strong>S. Krishnamurthy</strong>, A. Ravi, O. Degani, A. Natarajan,
+      <em>IEEE Radio &amp; Wireless Week (RWW), 2026</em>.
+    </li>
+  </ul>
+
+  <div class="die-photos">
+    <div class="die-slot">Die photo &mdash; RFIC 2019</div>
+    <div class="die-slot">Die photo &mdash; JSSC/SSCL 2020</div>
+    <div class="die-slot">Die photo &mdash; SSCL 2021 / RWW 2026</div>
+  </div>
+
+  <!-- N-Path Filtering at mm-Wave Frequencies -->
+
+  <h5>N-Path Filtering at mm-Wave Frequencies</h5>
+
+  <p>
+    This work explores the extension of N-path filters to mm-wave receiver front-ends, enabling
+    frequency-selective behavior at much higher operating frequencies than traditionally associated
+    with switched-capacitor or mixer-first architectures. A central challenge is the generation of
+    narrow LO pulses required to drive the N-path switches and the development of circuit
+    techniques to address this without compromising the noise figure or the linearity advantages
+    observed at lower frequencies.
+  </p>
+  <p>
+    Our work demonstrated a 28 nm CMOS prototype operating at 35 GHz, showing an
+    order-of-magnitude improvement in in-band linearity compared to state-of-the-art solutions,
+    while maintaining a modest noise figure. These results indicate that N-path filtering remains
+    a strong candidate for mm-wave digital massive-MIMO array front-ends.
+  </p>
+
+  <ul>
+    <li>
+      <a class="paper-title" href="">
+        10–35 GHz Passive Mixer-First Receiver Achieving +14 dBm In-Band IIP3 for Digital
+        Beam-Forming Arrays
+      </a>,
+      <strong>S. Krishnamurthy</strong>, A.M. Niknejad,
+      <em>IEEE Radio Frequency Integrated Circuits (RFIC) Symposium, 2020</em>.
+    </li>
+    <li>
+      <a class="paper-title" href="">
+        A Low-Power 70–100-GHz Mixer-First RX Leveraging Frequency-Translational Feedback
+      </a>,
+      L. Iotti, <strong>S. Krishnamurthy</strong>, G. LaCaille, A.M. Niknejad,
+      <em>IEEE Journal of Solid-State Circuits (JSSC), 2020</em>.
+    </li>
+  </ul>
+
+  <div class="die-photos">
+    <div class="die-slot">Die photo &mdash; mm-wave mixer-first / N-path RX</div>
+  </div>
+
+  <!-- ===================================================== -->
+  <!-- 2. High-Speed Optical and Wireline Links              -->
+  <!-- ===================================================== -->
+
+  <h3>High-Speed Optical and Wireline Links</h3>
+
+  <p>
+    This thrust focuses on CMOS transceivers for short-reach, high-bandwidth electrical and optical
+    interconnects used in next-generation computing systems. The work targets low energy per bit,
+    high bandwidth density, and co-packaged integration with high-performance ASICs.
+  </p>
+
+  <!-- Optical: text is intentionally simple so we can refine later -->
+
+  <h4>High-Speed Co-Packaged VCSEL-Based Optical Links</h4>
+
+  <p>
+    This work develops multi-channel VCSEL-based optical transmitters and receivers for co-packaged
+    optics, targeting 50–100+ Gb/s per lane at low energy per bit. Architectures explore both NRZ
+    and PAM-4 signaling, fiber termination, and electrical–optical co-integration with switching
+    ASICs.
+  </p>
+
+  <ul>
+    <li>
+      <a class="paper-title" href="">
+        A 4× 50 Gb/s 2.9 pJ/b NRZ VCSEL-Based Co-Packaged Optical Link With Fiber-Termination
+      </a>,
+      <strong>S. Krishnamurthy</strong>, S. Mondal, J. Qiu, J. Kennedy, S. Bose, T. Acikalin,
+      S. Yamada, J. Jaussi, M. Mansuri,
+      <em>IEEE Journal of Solid-State Circuits (JSSC), 2025 &mdash; Early Access</em>.
+    </li>
+    <li>
+      <a class="paper-title" href="">
+        A 4× 64 Gb/s NRZ 1.3 pJ/b Co-Packaged and Fiber-Terminated 4-Channel VCSEL-Based
+        Optical Transmitter
+      </a>,
+      S. Mondal, J. Qiu, <strong>S. Krishnamurthy</strong>, J. Kennedy, S. Bose, T. Acikalin,
+      S. Yamada, J. Jaussi, M. Mansuri,
+      <em>IEEE International Solid-State Circuits Conference (ISSCC), 2024</em>.
+    </li>
+    <li>
+      <a class="paper-title" href="">
+        A 4× 50 Gb/s NRZ 1.5 pJ/b Co-Packaged and Fiber-Terminated 4-Channel Optical RX
+      </a>,
+      <strong>S. Krishnamurthy</strong>, S. Mondal, J. Qiu, J. Kennedy, S. Bose, T. Acikalin,
+      S. Yamada, J. Jaussi, M. Mansuri,
+      <em>IEEE VLSI Symposium on Technology and Circuits, 2024</em>.
+    </li>
+    <li>
+      <a class="paper-title" href="">
+        A 0.9 pJ/b 108 Gb/s PAM4 VCSEL-Based Direct-Drive Optical Engine
+      </a>,
+      <strong>S. Krishnamurthy*</strong>, S. Mondal*, J. Qiu, T. Acikalin, S. Bose, S. Yamada,
+      J. Jaussi, M. Mansuri,
+      <em>IEEE International Solid-State Circuits Conference (ISSCC), 2025</em>.
+    </li>
+    <li>
+      <a class="paper-title" href="">
+        A 108 Gb/s PAM-4 VCSEL-Based Direct-Drive Optical Engine for Co-Packaged Optics
+        Applications
+      </a>,
+      S. Mondal*, <strong>S. Krishnamurthy*</strong>, J. Qiu, T. Acikalin, S. Bose, S. Yamada,
+      J. Jaussi, M. Mansuri,
+      <em>IEEE Journal of Solid-State Circuits (JSSC), 2025 &mdash; Accepted</em>.
+    </li>
+  </ul>
+
+  <div class="die-photos">
+    <div class="die-slot">Die photo &mdash; NRZ co-packaged VCSEL TX/RX</div>
+    <div class="die-slot">Die photo &mdash; VLSI 2024 RX</div>
+    <div class="die-slot">Die photo &mdash; PAM4 direct-drive optical engine</div>
+  </div>
+
+  <!-- Wireline: ISSCC 2026 only -->
+
+  <h4>Next-Generation Die-to-Die Wireline Links</h4>
+
+  <p>
+    This work targets UCIe-compliant short-reach die-to-die electrical links for advanced
+    multi-die packages. Since the design is accepted but not yet published, only the reference
+    is listed here.
+  </p>
+
+  <ul>
+    <li>
+      <a class="paper-title" href="">
+        A 48 Gb/s/lane 1.24 Tb/s/mm UCIe-Compliant Die-to-Die Link Over 30 mm Standard Package
+      </a>,
+      S. Mondal*, <strong>S. Krishnamurthy*</strong>, S. Yamada, Z. Liu, J. Qiu, S. Bose, Z. Wu,
+      G. Pasdast, J. Jaussi, M. Mansuri,
+      <em>IEEE International Solid State Circuits Conference (ISSCC), 2026 &mdash; Accepted</em>.
+    </li>
+  </ul>
+
+</div>
+
 	
-	<!--<div id="feature">
-		<img src="./index_files/front.jpg" width="700" height="200" alt="Sample header image">
-	</div>
-
-	<div id="main">
-		<div id="content">
-			<h2>About this template</h2>
-			<p>This is Basic Noise, a free website template by Andreas Viklund. It offers a simple and useful layout that can be built upon and experimented with. The default style is 980 pixels wide, and pre-defined styles are available for fixed widths of 760 and 600 pixels, as well as a full-width (100%) layout (as in the Variant Multi template).</p>
-
-			<div class="left">			
-				<h3>Free to download, free to use</h3>
-				<p>Like all templates from andreasviklund.com, Variant Wide is free to use for any purpose.</p>
-				<p>For more information, tips and additional resources, visit <a href="https://andreasviklund.com/">andreasviklund.com</a>.</p>
-			</div>
-
-			<div class="right">
-				<h3>Find the hidden features</h3>
-                <p>The stylesheet includes a number of useful options for customization and additional layout variations. Alternate versions of this template will be made available to show examples of these options.</p>
-			</div>
-			<div class="clear">&nbsp;</div>
-		</div>
-	</div>
-
-	<div id="credits">
-		<p>© 2012 Your Name | Template design by <a href="https://andreasviklund.com/">Andreas Viklund</a><br>
-		<span class="small">Best hosted at <a href="https://www.svenskadomaner.se/?ref=mall&amp;ling=en" title="Svenska Domäner AB">www.svenskadomaner.se</a></span></p>
-	</div>
-</div>-->
 <script defer="" src="./index_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;7452e5d254ab40cf89711c3d9cce04f6&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
 
 
