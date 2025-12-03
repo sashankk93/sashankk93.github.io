@@ -406,3 +406,45 @@ nav ul li a:hover {
     background-color: #2e3fb8;
 }
 
+/* --- Research page helpers --- */
+
+/* You may already have this from Publications; if so, skip this block */
+.paper-title {
+    color: #4554d8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.paper-title:hover {
+    text-decoration: underline;
+}
+
+/* Make empty links look like normal text */
+.paper-title[href=""] {
+    pointer-events: none;
+    color: inherit;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+/* Simple die photo placeholder layout */
+.die-photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 8px 0 16px 0;
+}
+
+.die-slot {
+    flex: 0 0 150px;
+    height: 100px;
+    border: 1px dashed #bbb;
+    border-radius: 6px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #666;
+}
+
